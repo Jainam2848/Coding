@@ -61,6 +61,7 @@ def draw_point(x, y):
 def clearTextinput():
     textBox1.delete("1.0", "end")
     textBox2.delete("1.0", "end")
+
     
 def retrieve_input(x0,y0):
     
