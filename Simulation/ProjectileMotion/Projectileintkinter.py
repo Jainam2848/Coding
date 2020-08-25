@@ -49,6 +49,17 @@ def buttonPushed():
     global projectileScreen
     projectileScreen.destroy()
     
+
+
+# Create circle
+    x0 = 10
+    y0 = 600
+    myOval = my_canvas.create_oval(x0,y0,x0+25,y0+25,fill="white")
+    
+        
+    
+    
+    
 def draw_oval(x, y):
     my_canvas.create_oval(x,y, x+25, y+ 25, fill="white")
 
@@ -57,10 +68,6 @@ def del_oval(x, y):
     
 def draw_point(x, y):
     my_canvas.create_oval(x, y, x+1, y+1, fill="#476042")
-
-def clearTextinput():
-    textBox1.delete("1.0", "end")
-    textBox2.delete("1.0", "end")
 
     
 def retrieve_input(x0,y0):
@@ -88,7 +95,7 @@ projectileScreen.title("Simulation")
 w = tk.Label(projectileScreen,text="Projectile motion simulation")
 w.pack()
 #Create canvas
-my_canvas = tk.Canvas(projectileScreen, width = 650, height =650,bg="black")
+my_canvas = tk.Canvas(projectileScreen, width = 800, height =650,bg="black")
 my_canvas.pack(padx=10, pady=10)
 
 # Create circle
@@ -119,8 +126,15 @@ buttonCommit.pack(side=tk.LEFT, padx = 10)
 exitButton = tk.Button(projectileScreen,text="Exit", relief= tk.RIDGE, command=buttonPushed)
 exitButton.pack(side=tk.RIGHT, padx=10)
 
+
+def clearTextinput():
+    textBox1.delete("1.0", "end")
+    textBox2.delete("1.0", "end")
+    my_canvas.delete("all")
+    
 #Create reset button
-resetButton = tk.Button(projectileScreen,text="Reset", relief= tk.RIDGE, command=clearTextinput)
+resetButton = tk.Button(projectileScreen,text="Reset", relief= tk.RIDGE,
+                        command=clearTextinput)
 resetButton.pack(side=tk.RIGHT, padx=10)
   
 
