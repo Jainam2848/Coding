@@ -47,19 +47,8 @@ class ProjectileMotion:
 
 def buttonPushed():
     global projectileScreen
-    projectileScreen.destroy()
-    
+    projectileScreen.destroy() 
 
-
-# Create circle
-    x0 = 10
-    y0 = 600
-    myOval = my_canvas.create_oval(x0,y0,x0+25,y0+25,fill="white")
-    
-        
-    
-    
-    
 def draw_oval(x, y):
     my_canvas.create_oval(x,y, x+25, y+ 25, fill="white")
 
