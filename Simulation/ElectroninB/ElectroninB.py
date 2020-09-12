@@ -1,9 +1,10 @@
 from vpython import *
 import numpy as np
+import time
 
 display(width = 1300, height = 1000)
 
-MagneticField = 1e-5*vector(5,0,0)
+MagneticField = 1e-5*vector(0,0,-5)
 
 Electron = sphere(pos = vector(-5,0,0), radius = 0.1, color =color.white, make_trail = True)
 
@@ -14,10 +15,10 @@ Electron.p = Electron.m*Electron.v*vector(0,3,0)
 
 
 t = 0
-dt = 13.87e-9
+dt = 1e-9
 
 while t<1e-6:
-    rate(1000)
+    rate(10000)
       
     Force = cross(Electron.charge* Electron.p/ Electron.m, MagneticField)
     # update momentum
@@ -26,4 +27,5 @@ while t<1e-6:
     Electron.pos = Electron.pos + Electron.p*dt/Electron.m
 
     t = t+dt
+    time.sleep(0.01)
                                                                                                                                               
