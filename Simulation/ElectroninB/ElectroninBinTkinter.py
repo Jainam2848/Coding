@@ -1,25 +1,17 @@
-from vpython import *
-import numpy as np
-import time
 import tkinter as tk
 from tkinter import ttk
 import math
+import numpy as np
+import time
 
-magneticScreen = tk.Tk()
-magneticScreen.title("Simulation")
+class ElectronMotion:
 
-w = tk.Label(magneticScreen,text="Motion of electron in Magnetic field ")
-w.pack()
 
-my_canvas = tk.Canvas(magneticScreen, width = 800, height =650,bg="black")
-my_canvas.pack(padx=10, pady=10)
-
-class electronMotion():
-    def __init__(self, x, y):
+    def __init__(self, x, y, velocity):
         self.x = x
         self.y = y
         self.mass= 9.1e-31
-        self.v = Velocity
+        self.v = velocity
         self.charge = -1.6e-19
         self.dt = 1e-9
         self.time = 0
@@ -52,6 +44,14 @@ def retrieve_input(x0,y0):
     
     
         
+magneticScreen = tk.Tk()
+magneticScreen.title("Simulation")
+
+w = tk.Label(magneticScreen,text="Motion of electron in Magnetic field ")
+w.pack()
+
+my_canvas = tk.Canvas(magneticScreen, width = 800, height =650,bg="black")
+my_canvas.pack(padx=10, pady=10)
 
     
 # creating oval        
