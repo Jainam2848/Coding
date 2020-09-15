@@ -4,11 +4,9 @@ import time
 
 screen = display(title = "Motion of electron in magnetic field", width = 600, height = 200)
 
-<<<<<<< HEAD
 MagneticField = 5e-5*vector(0,-5,-5)
-=======
-MagneticField = 1e-5*vector(0,0,-5)
->>>>>>> b00e2c005f2d9ea369fd521f46d789052b7f6bcb
+
+
 
 Electron = sphere(pos = vector(-5,0,0), radius = 0.1, color = color.red, make_trail = True)
 
@@ -41,14 +39,10 @@ cbutton = button(text="Reset",pos=scene.title_anchor, bind=Reset)
 t = 0
 dt = 1e-9
 
-<<<<<<< HEAD
+
 while t<1e-5:
     if running:
         rate(10000)
-=======
-while t<1e-6:
-    rate(10000)
->>>>>>> b00e2c005f2d9ea369fd521f46d789052b7f6bcb
       
         Force = cross(Electron.charge* Electron.p/ Electron.m, MagneticField)
     # update momentum
