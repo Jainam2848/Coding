@@ -105,6 +105,7 @@ textBox2=tk.Text(projectileScreen, height=1, width=10)
 textBox2.pack(side=tk.LEFT, padx=10)
 
 
+
 buttonCommit=tk.Button(projectileScreen, height=1, width=10, text="Simulate", relief=tk.GROOVE,
                     command=lambda: retrieve_input(x0,y0))
 
