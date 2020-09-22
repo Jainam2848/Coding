@@ -7,16 +7,15 @@ import numpy as np
 import time
 
 
-projectileScreen = tk.Tk()
-projectileScreen.title("Simulation")
 
-w = tk.Label(projectileScreen,text="Projectile motion simulation")
+magneticScreen = tk.Tk()
+magneticScreen.title("Simulation")
+
+w = tk.Label(magneticScreen,text="Motion of electron in Magnetic field ")
 w.pack()
-
 
 my_canvas = tk.Canvas(magneticScreen, width = 800, height =650,bg="black")
 my_canvas.pack(padx=10, pady=10)
-
 MagneticField = np.array([[0,0,0],[0,-5,0],[0,0,5]])
 Velocity = np.array([[0,0,0],[0,-3,0],[0,0,0]])
 A = np.cross(MagneticField, Velocity)
