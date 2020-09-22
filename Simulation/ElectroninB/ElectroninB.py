@@ -26,7 +26,6 @@ def Reset(c):
     Electron.clear_trail()
     Electron.make_trail = False
     Electron.radius = 0.3
-    
 
 cbutton = button(text="Reset",pos=scene.title_anchor, bind=Reset)
 
