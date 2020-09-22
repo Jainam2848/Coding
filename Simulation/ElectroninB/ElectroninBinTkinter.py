@@ -6,8 +6,12 @@ import math
 import numpy as np
 import time
 
-class ElectronMotion:
 
+projectileScreen = tk.Tk()
+projectileScreen.title("Simulation")
+
+w = tk.Label(projectileScreen,text="Projectile motion simulation")
+w.pack()
 
 
 my_canvas = tk.Canvas(magneticScreen, width = 800, height =650,bg="black")
@@ -16,21 +20,17 @@ my_canvas.pack(padx=10, pady=10)
 MagneticField = np.array([[0,0,0],[0,-5,0],[0,0,5]])
 Velocity = np.array([[0,0,0],[0,-3,0],[0,0,0]])
 A = np.cross(MagneticField, Velocity)
-
+Mass = 9.1e-31
+q = -1.6e-19
+dt = 1e-9
 class electronMotion:
     def __init__(self, x, y, Velocity, MagneticField):
         self.x = x
         self.y = y
-        self.m= 9.1e-31
+        self.m= Mass
         self.v = Velocity
-
-    def __init__(self, x, y, velocity):
-        self.x = x
-        self.y = y
-        self.mass= 9.1e-31
-        self.v = velocity
-        self.charge = -1.6e-19
-        self.dt = 1e-9
+        self.charge = q
+        self.dt = dt
         self.time = 0
         self.MagneticField = MagneticField 
         self.p = self.m*self.v
