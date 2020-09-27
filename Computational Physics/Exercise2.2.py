@@ -24,7 +24,7 @@ def main():
     ax1.plot(T, h)
     plt.show()
     ax1.legend()
-    figure.savefig('SatelliteHeight.pdf')
+    fig.savefig('SatelliteHeight.pdf')
 
 
 if __name__ == "__main__":
