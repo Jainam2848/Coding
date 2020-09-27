@@ -65,7 +65,7 @@ Electron = sphere(pos = vector(0,-5,0), radius = 0.2, color = color.red, make_tr
 
 Electron.m = 9.1e-31
 Electron.charge = -1.6e-19
-Electron.v = input(prompt("enter velocity"))
+Electron.v = float(input("enter velocity"))
 Electron.p = Electron.m * Electron.v*vector(0, 3, 0)
 
 
