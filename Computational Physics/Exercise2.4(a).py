@@ -7,7 +7,7 @@ c = 1
 t = d/v
 # T is Dilated time
 
-a = v**2 /c
+a = v**2 /c**2
 b = 1 - a
 T = t* np.sqrt(b)
 print("The time taken by spaceship is :", T, "light years")
