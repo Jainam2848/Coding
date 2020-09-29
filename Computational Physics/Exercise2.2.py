@@ -14,7 +14,7 @@ def main():
     T = np.linspace(0.0, 1.0e5, 1000)
     h = np.empty(1000)
     for i in range(1000):
-        h[i] = (G*M*T[i]**2/(4.0*np.pi**4))**(1.0/3) - R
+        h[i] = (G*M*T[i]**2/(4.0*np.pi**2))**(1.0/3) - R
     sns.set_style("dark")
     fig = plt.figure(figsize=(7, 7))
     ax1 = plt.axes()
