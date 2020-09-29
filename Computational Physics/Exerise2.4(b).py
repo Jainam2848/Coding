@@ -1,7 +1,7 @@
 import numpy as np
 
-d = int(input("Enter Distance of planet :"))
-v = float(input("Enter Velocty of planet :"))
+d = float(input("Enter Distance of planet :"))
+v = float(input("Enter Velocty of spaceship :"))
 
 t = d/v
 
