@@ -2,9 +2,10 @@ import numpy as np
 
 
 m = 9.11e-31
-# h is planks constant
+
 E = float(input("Enter Kinetic energy (in ev):"))
 v = float(input("Enter potential step (in ev) :"))
+# h is planks constant
 h = 6.626e-34
 H = h/2*np.pi
 
