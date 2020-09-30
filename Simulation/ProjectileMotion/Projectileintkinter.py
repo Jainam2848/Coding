@@ -4,6 +4,7 @@ import math
 import numpy as np
 import time
 
+
 class ProjectileMotion:
         
  
@@ -34,7 +35,7 @@ class ProjectileMotion:
         self.vy -= self.ay*self.dt
         return self.vy
 
-
+    #update position
     def update_position(self): 
         self.x += self.vx*self.dt
         self.y -= self.vy*self.dt - 0.5*self.ay*(self.dt)**2
