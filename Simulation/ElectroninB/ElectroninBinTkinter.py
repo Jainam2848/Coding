@@ -6,8 +6,6 @@ import math
 import numpy as np
 import time
 
-
-
 magneticScreen = tk.Tk()
 magneticScreen.title("Simulation")
 
@@ -16,6 +14,8 @@ w.pack()
 
 my_canvas = tk.Canvas(magneticScreen, width = 800, height =650,bg="black")
 my_canvas.pack(padx=10, pady=10)
+
+
 MagneticField = np.array([[0,0,0],[0,-5,0],[0,0,5]])
 Velocity = np.array([[0,0,0],[0,-3,0],[0,0,0]])
 A = np.cross(MagneticField, Velocity)
