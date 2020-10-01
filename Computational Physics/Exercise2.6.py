@@ -31,8 +31,8 @@ e = (l2-l1)/(l2+l1)
 
 print(f"The length of aphelion is : {l2}")
 
-print(f"The velocity of planet at aphelion is : {l2}")
+print(f"The velocity of planet at aphelion is : {v2}")
 
-print(f"The orbital period of planet is : {l2}")
+print(f"The orbital period of planet is : {T}")
 
-print(f"The orbital eccentricity of planet is : {l2}")
+print(f"The orbital eccentricity of planet is : {e}")
