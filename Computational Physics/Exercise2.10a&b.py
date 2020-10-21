@@ -19,8 +19,9 @@ def main():
         else: a5=-12.0
         
     B = float(a1*A - a2*A**(2/3)- a3*(Z**2)/A**(1/3) - a4*((A-2*Z)**2)/A + a5/A**(1/2))
-
+# question a
     print(f"The binding energy of atom is : {B}")
+# question b
     print(f"The binding energy of atom is : {B/A}")
 
 if __name__ == "__main__":
