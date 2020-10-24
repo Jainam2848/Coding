@@ -5,6 +5,7 @@ a3 = 0.75
 a4 = 93.2
 
 # now we have many value for a5
+B = np.zeros(300)
 
 
 def main():
@@ -17,8 +18,6 @@ def main():
                     a5 = 12.0
                 else:
                     a5 = -12.0
-
-        B = np.zeros(3*Z)
 
         B[A] = a1*A - a2*A**(2/3) - a3*(Z**2)/A**(1/3) - \
             a4*((A-2*Z)**2)/A + a5/A**(1/2)
