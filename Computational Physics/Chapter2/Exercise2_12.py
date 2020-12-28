@@ -56,7 +56,7 @@ def prime_list1(N):
 
 
 def main():
-    n = 100
+    n = 10000
     print("The list of primes using factors upto sqrt(n): ")
     print(prime_list(n))
     print("The list of primes using prime factors from the list of primes:")
