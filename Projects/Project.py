@@ -5,7 +5,7 @@ from array import array
 
 #Graph of Average temperature vs years.
 
-data = np.loadtxt("graph.txt")
+data = np.loadtxt("Temperature.txt")
 x = data[:,0]   #Years
 y = data[:,1]   #Average temperature
 
