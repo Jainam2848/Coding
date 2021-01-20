@@ -8,7 +8,7 @@ x = 2*np.cos(theta) + np.cos(2*theta)
 y = 2*np.sin(theta) - np.sin(2*theta)
 print(x,y)
 plt.plot(x,y)
-plt.title('Deltoit Curve')
+plt.title('Deltoid Curve')
 plt.show()
 
 # Galilean spiral
