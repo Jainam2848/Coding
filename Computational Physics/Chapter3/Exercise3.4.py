@@ -12,6 +12,6 @@ for i in  range(-L,L+1):
                 v.sphere(pos = v.vector(i,j,k), radius = R, color = v.color.blue)
             count+=1   
     
-        print(i,j,k)
+            #print(i,j,k)
     
     
