@@ -1,9 +1,11 @@
 from vpython import *
 import numpy as np
 import math 
+import matplotlib.pylab as plt
+#texture  = nphttp://planetpixelemporium.com/details/popup_earth.html
+#texture = plt.imread("http://planetpixelemporium.com/details/popup_earth.html")
 
 sun = sphere(pos=vector(0, 0, 0) , radius=1.8, color=color.yellow)
-
 Mercury = sphere(pos = vector(5,0,0), radius = 0.6, color = color.green, make_trail = True)
 Venus = sphere(pos=vector(10, 0, 0) , radius=0.6, color=color.magenta, make_trail = True)
 Earth = sphere(pos=vector(15, 0, 0) , radius=0.9, color=color.blue, make_trail = True)
