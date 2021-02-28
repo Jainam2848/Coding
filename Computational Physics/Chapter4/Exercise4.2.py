@@ -20,9 +20,9 @@ def main():
     print("The first solution with method B is :", x1)
     print("The second solution with method B  is :", y2)
     
-    
+#4.2(c)   
     print('')
-    print("The correct root values are :" , y,x1)
+    print("The correct root values are :" , y,",", x1)
     
 if __name__ == "__main__":
     main()
