@@ -8,4 +8,3 @@ print(y)
 yk = sum(y)
 I = h*yk
 print('The value of integral is :', I)
-
