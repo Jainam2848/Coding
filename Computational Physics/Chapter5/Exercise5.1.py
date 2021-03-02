@@ -18,7 +18,7 @@ h = (b-a)/n
 
 s = []
 for k in range(1,n):
-    s += v(a+h*k)*t(a+h*k)
+    s+= f(v[a+k*h], t[a+k*h])
 
 print(h*s)
 plt.plot(t,v)
