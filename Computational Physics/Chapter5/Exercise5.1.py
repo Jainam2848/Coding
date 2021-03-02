@@ -7,7 +7,8 @@ t = data[:, 0]
 v = data[:, 1]
 #x = sum(v*t)
 
-
+def f(v,t):
+    return v*t
 
 #print(x)    
 n = len(v)   #number of slices
@@ -16,9 +17,8 @@ a = 0        #lower limit
 h = (b-a)/n
 
 s = []
-
 for k in range(1,n):
-    s+= v(a+h*k)*t(a+h*k)
+    s += v(a+h*k)*t(a+h*k)
 
 print(h*s)
 plt.plot(t,v)
