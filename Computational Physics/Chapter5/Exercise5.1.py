@@ -21,4 +21,4 @@ s = 0.5*f(a) + 0.5*f(b)
 for k in range(1,n):
     s+= f(a+h*k)
 print(h*s)
-plt.plot(v,s)
+plt.plot(t,v)
