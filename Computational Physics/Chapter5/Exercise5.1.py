@@ -11,7 +11,7 @@ def f(x):
     f = v*t
     return f
 
-    
+#print(x)    
 n = 100   #number of slices
 b = 100    #upper limit
 a = 0      #lower limit
@@ -23,3 +23,4 @@ for k in range(1,n):
     s+= f(a+h*k)
 print(h*s)
 plt.plot(t,v)
+plt.show()
