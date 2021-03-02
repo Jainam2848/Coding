@@ -21,8 +21,10 @@ s = 0.5*f(a) + 0.5*f(b)
 
 for k in range(1,n):
     s+= f(a+h*k)
+
 print(h*s)
 plt.plot(t,v)
-plt.plot(t,x)
+#plt.plot(t,s)
+plt.xlabel("Time")
 
 plt.show()
