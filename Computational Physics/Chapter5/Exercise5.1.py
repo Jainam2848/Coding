@@ -11,7 +11,7 @@ def f(x):
     return f
 
     
-n = 10   #number of slices
+n = 100   #number of slices
 b = 100    #upper limit
 a = 0      #lower limit
 h = (b-a)/n
