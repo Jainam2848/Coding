@@ -5,6 +5,7 @@ data = np.loadtxt('http://www-personal.umich.edu/~mejn/cp/data/velocities.txt', 
 
 t = data[:, 0]
 v = data[:, 1]
+x = sum(v*t)
 
 def f(x):
     f = v*t
