@@ -16,9 +16,12 @@ b = 100      #upper limit
 a = 0        #lower limit
 h = (b-a)/n
 
-s = []
-for k in range(1,n):
-    s+= f(v[a+k*h], t[a+k*h])
+s = 0.0
+for k in range(n):
+    print(v[k], t[k])
+    s += f(v[k], t[k])
 
-print(h*s)
-plt.plot(t,v)
+print(s)
+plt.plot(t, v)
+plt.xlabel('Time')
+plt.show()
