@@ -1,7 +1,7 @@
 import matplotlib.pylab as plt
 from numpy import arange
 
-def logistic_map(r,x=1./2,n=1000):
+def logistic_map(r,x=0.5,n=1000):
 	for i in range(n):
 		x = r*x*(1-x)
 	return x
