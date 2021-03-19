@@ -39,7 +39,7 @@ planet5 = sphere( pos=vector(0,6,0), radius=0.3, color=color.yellow,
 dt = 0.0001
 t = 0
 while (True):
-    rate(1000)
+    rate(100)
     
     # Calculate forces.
     star.force = gforce(star,planet1)+gforce(star,planet2)+gforce(star,planet3)+gforce(star,planet4)+gforce(star,planet5)
