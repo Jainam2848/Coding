@@ -30,7 +30,6 @@ plt.plot(x, J(0, x), label='J0')
 plt.plot(x, J(1, x), label='J1')
 plt.plot(x, J(2, x), label='J2')
 plt.legend(("$J_0$", "$J_1$", "$J_2$"))
-# print(J(1,x))
 plt.show()
 
 # part(b)
@@ -39,12 +38,13 @@ lamda = 500e-9
 k = 2*np.pi/lamda
 r = np.linspace(0, 1e-6)
 I = (J(1, r*k)/k/r)**2
+print(len(I))
+I2 = np.reshape(I, (2,25))
+#data = np.array([r, I])
 
-data = np.array([r, I])
+plt.plot(I2)
 
-plt.plot(data)
-
-#plt.imshow(data)
+#plt.imshow(I2)
 plt.title(" Diffraction")
 plt.show()
 
