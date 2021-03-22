@@ -15,7 +15,7 @@ def J(m, x):
     b = np.pi
     h = (b-a)/N
 
-    s = f(a) + f(b)
+    s = f(a) + f(b) 
     for k in range(1, N//2):
         s += 4*f(a + (2*k-1)*h) + 2*f(a+2*k*h)
     # print(s)
@@ -39,7 +39,22 @@ lamda = 500e-9
 k = 2*np.pi/lamda
 r = np.linspace(0, 1e-6)
 I = (J(1, r*k)/k/r)**2
+
 data = np.array([r, I])
 
-plt.imshow(data)
+plt.plot(data)
+
+#plt.imshow(data)
+plt.title(" Diffraction")
 plt.show()
+
+
+
+
+
+
+
+
+
+
+
