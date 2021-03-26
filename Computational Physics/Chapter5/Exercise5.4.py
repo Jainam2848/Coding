@@ -16,10 +16,10 @@ def J(m, x):
     b = np.pi
     h = (b-a)/N
 
-    s = f(a) + f(b) 
+    s = f(a) + f(b)
     for k in range(1, N//2):
         s += 4*f(a + (2*k-1)*h) + 2*f(a+2*k*h)
-    # print(s)   
+    # print(s)
     j = h/3*s/np.pi
     # print(j)
     return j
@@ -40,21 +40,15 @@ k = 2*np.pi/lamda
 
 r = np.linspace(0, 1e-6)
 
-x,y = np.mgrid[-1:1:100j,-1:1:100j]
-print(x,y)
+x, y = np.mgrid[-1:1:100j, -1:1:100j]
+# print(x, y)
 r = np.sqrt(x**2 + y**2)
 I = (J(1, r*k)/k/r)**2
 
 
-plt.imshow(I, vmax = 0.01)
+plt.imshow(I, vmax=0.01)
 plt.hot()
 
 
 plt.title(" Density plot of the intensity of the circular diffraction pattern of a point light source")
 plt.show()
-
-
-
-
-
-
