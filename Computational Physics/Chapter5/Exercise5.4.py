@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pylab as plt
+
 np.seterr(divide='ignore', invalid='ignore')
 
 # part(a)
@@ -18,7 +19,7 @@ def J(m, x):
     s = f(a) + f(b) 
     for k in range(1, N//2):
         s += 4*f(a + (2*k-1)*h) + 2*f(a+2*k*h)
-    # print(s)
+    # print(s)   
     j = h/3*s/np.pi
     # print(j)
     return j
@@ -34,37 +35,23 @@ plt.show()
 
 # part(b)
 
-lamda = 500e-9
+lamda = 0.5
 k = 2*np.pi/lamda
 
 r = np.linspace(0, 1e-6)
 
-theta = np.linspace(0, 2*np.pi)
-
-X = r*np.cos(theta)
-Y = r*np.sin(theta)
-r1 = np.sqrt(X**2 + Y**2)
-I = (J(1, r1*k)/k/r1)**2
-
-#I2 = np.reshape(I, (2,25))
-#data = np.array([r, I])
+x,y = np.mgrid[-1:1:100j,-1:1:100j]
+print(x,y)
+r = np.sqrt(x**2 + y**2)
+I = (J(1, r*k)/k/r)**2
 
 
-#plt.plot(data)
+plt.imshow(I, vmax = 0.01)
+plt.hot()
 
 
-#plt.imshow(I)
-#plt.plot(X,Y)
-
-
-
-plt.title(" Diffraction")
+plt.title(" Density plot of the intensity of the circular diffraction pattern of a point light source")
 plt.show()
-
-
-
-
-
 
 
 
