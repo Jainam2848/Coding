@@ -13,6 +13,7 @@ h = 0.0
 
 x = np.arange(0.0, 3.0, 0.1)
 z = np.zeros(len(x))
+
 for i in range(len(x)):
     b = x[i]
     h += (b-a)/N
@@ -23,5 +24,6 @@ for i in range(len(x)):
         s += f(a + k*h)
     c = h*s
     z[i] = c
+    print(z)
 plt.plot(x, z, linestyle='-.')
 plt.show()
