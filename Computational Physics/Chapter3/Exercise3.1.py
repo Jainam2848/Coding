@@ -19,7 +19,7 @@ r = 5
 a = [sum(y[k-r:k+r]) for k in range(1000)]
 c = np.array(a)
 b = c/(2*r)
-
+print( b )
 plt.plot(x,y,'g.')
 plt.plot(x,b, label = 'average')
 plt.show
