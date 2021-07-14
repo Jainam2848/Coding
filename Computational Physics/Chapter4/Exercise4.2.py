@@ -18,7 +18,7 @@ def main():
     
     print("")
     print("The first solution with method B is :", x1)
-    print("The second solution with method B  is :", y2)
+    print("The second solution with method B is :", y2)
     
 #4.2(c)   
     print('')
