@@ -5,13 +5,13 @@ import matplotlib.pylab as plt
 #texture  = nphttp://planetpixelemporium.com/details/popup_earth.html
 #texture = plt.imread("http://planetpixelemporium.com/details/popup_earth.html")
 
-sun = sphere(pos=vector(0, 0, 0) , radius=1.8, color=color.yellow)
-Mercury = sphere(pos = vector(5,0,0), radius = 0.6, color = color.green, make_trail = True)
-Venus = sphere(pos=vector(10, 0, 0) , radius=0.6, color=color.magenta, make_trail = True)
-Earth = sphere(pos=vector(15, 0, 0) , radius=0.9, color=color.blue, make_trail = True)
-Mars = sphere(pos=vector(20, 0, 0) ,radius=0.7, color = color.red, make_trail = True)
-Jupiter = sphere(pos=vector(25, 0, 0) ,radius=1.1, color = color.orange, make_trail = True)
-Saturn = sphere(pos=vector(30, 0, 0) ,radius=1.0, color = color.yellow, make_trail = True)
+sun      = sphere(pos=vector(0, 0, 0) , radius=1.8, color=color.yellow)
+Mercury  = sphere(pos =vector(5,0,0), radius = 0.6, color = color.green, make_trail = True)
+Venus    = sphere(pos=vector(10, 0, 0) , radius=0.6, color=color.magenta, make_trail = True)
+Earth    = sphere(pos=vector(15, 0, 0) , radius=0.9, color=color.blue, make_trail = True)
+Mars     = sphere(pos=vector(20, 0, 0) ,radius=0.7, color = color.red, make_trail = True)
+Jupiter  = sphere(pos=vector(25, 0, 0) ,radius=1.1, color = color.orange, make_trail = True)
+Saturn   = sphere(pos=vector(30, 0, 0) ,radius=1.0, color = color.yellow, make_trail = True)
 
 
 Mercuryomega = 2*3.14159/88
