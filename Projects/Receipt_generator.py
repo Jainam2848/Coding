@@ -69,7 +69,7 @@ while True:
         speak("How much kilogram :")
         query1 = int(listen()) 
         
-        total_bill =  total_bill + int(query1)*300
+        total_bill =  total_bill + int(query1)*500
         
     elif 'almonds' in query or 'alomond' in query:
         speak("almonds have been added ")
@@ -77,7 +77,7 @@ while True:
         speak("How much kilogram :")
         query1 = listen() 
         
-        total_bill =  total_bill + int(query1)*800
+        total_bill =  total_bill + int(query1)*650
         
     elif 'kaju' in query:
         speak("kaju has been added ")
@@ -85,7 +85,7 @@ while True:
         speak("How much kilogram :")
         query1 = listen() 
         
-        total_bill =  total_bill + int(query1)*900
+        total_bill =  total_bill + int(query1)*680
         
     elif 'chilli powder' in query:
         speak("chilli powder has been added ")
@@ -93,7 +93,7 @@ while True:
         speak("How much kilogram :")
         query1 = listen() 
         
-        total_bill =  total_bill + int(query1)*200
+        total_bill =  total_bill + int(query1)*250
         
     elif 'turmeric powder'in query or 'turmeric' in query:
         speak("turmeric powder has been added ")
@@ -101,7 +101,7 @@ while True:
         speak("How much kilogram :")
         query1 = listen() 
         
-        total_bill =  total_bill + int(query1)*30
+        total_bill =  total_bill + int(query1)*150
         
     else:
         print("Please choose your item from the list.")
