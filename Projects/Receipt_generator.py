@@ -6,7 +6,7 @@ engine = p.init("sapi5")
 
 voices = engine.getProperty("voices")
 engine.connect("voices", voices[1].id)
-duration = 4
+duration = 5
 def speak(audio):
     engine.say(audio)
     engine.runAndWait()
@@ -54,10 +54,6 @@ while True:
     speak("What would you like to purchase ? or say exit :")
     #user_input = input('What would you like to purchase ? or press q to exit  :').lower()
     query = listen().lower()
-    
-    print("listening..")
-    if 'exit' in query:
-        break
         
     if 'exit' in query:
         break
