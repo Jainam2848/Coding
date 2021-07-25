@@ -6,7 +6,7 @@ engine = p.init("sapi5")
 
 voices = engine.getProperty("voices")
 engine.connect("voices", voices[1].id)
-duration = 5
+duration = 4
 def speak(audio):
     engine.say(audio)
     engine.runAndWait()
@@ -37,7 +37,7 @@ print('We have following items available at the moment :')
 
 items = ['Garam Masala', 'Almonds', 'Kaju', 'Chilli powder', 'Turmeric powder']
 
-prices = [300, 800, 900, 200, 45]
+prices = [500, 650, 680, 250, 150]
 customer_list = []
 total_bill = 0
 i = 0
