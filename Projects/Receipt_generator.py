@@ -5,8 +5,8 @@ import pyttsx3 as p
 engine = p.init("sapi5")
 
 voices = engine.getProperty("voices")
-engine.connect("voices", voices[0].id)
-
+engine.connect("voices", voices[1].id)
+duration = 5
 def speak(audio):
     engine.say(audio)
     engine.runAndWait()
@@ -17,7 +17,7 @@ def listen():
     with sr.Microphone() as source:
         print("Listening...")
         r.pause_threshold = 1
-        audio = r.listen(source)
+        audio = r.record(source, duration=duration)
         query = ""
         try:
             print("Recognizing....")
@@ -30,7 +30,7 @@ def listen():
 #listen()
 
         
-speak("Welcome to Ashirwad kirana store")
+speak("Welcome to Aashirwad kirana store")
 speak('We have following items available at the moment :')
 
 print('We have following items available at the moment :')
@@ -41,7 +41,7 @@ prices = [300, 800, 900, 200, 45]
 customer_list = []
 total_bill = 0
 i = 0
-'''
+
 while  i<len(items):
     print('1 kg price of',items[i],'is :', prices[i])
     i+=1 
@@ -58,20 +58,16 @@ while True:
     print("listening..")
     if 'exit' in query:
         break
-    for a in items:
-        if a[0] not in query:
-            print("Please choose your item from the list.")
-        else:
-            pass
         
     if 'exit' in query:
         break
     
     elif 'garam masala' in query or 'garam' in query :
         speak("garam masala has been added ")
+        
         customer_list.append(query)
         speak("How much kilogram :")
-        query1 = listen() 
+        query1 = int(listen()) 
         
         total_bill =  total_bill + int(query1)*300
         
@@ -106,18 +102,20 @@ while True:
         query1 = listen() 
         
         total_bill =  total_bill + int(query1)*30
-'''
+        
+    else:
+        print("Please choose your item from the list.")
+        
 print()    
 print("Your list of items is :",[customer_list])   
 
 speak("Your list of items is :")
 
 speak(customer_list) 
-print("Your total bill is ")
+print("Your total bill is :")
   
 speak("Your total bill is ")
-
+speak(total_bill)
 print(total_bill)
-
 
 speak("Thank you for Shopping with us !🙏")
