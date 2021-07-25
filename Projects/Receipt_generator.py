@@ -6,7 +6,7 @@ engine = p.init("sapi5")
 
 voices = engine.getProperty("voices")
 engine.connect("voices", voices[1].id)
-duration = 5
+duration = 4
 def speak(audio):
     engine.say(audio)
     engine.runAndWait()
