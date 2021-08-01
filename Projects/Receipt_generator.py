@@ -19,6 +19,7 @@ def listen():
         r.pause_threshold = 1
         audio = r.record(source, duration=duration)
         query = ""
+        
         try:
             print("Recognizing....")
             query = r.recognize_google(audio)
@@ -27,7 +28,6 @@ def listen():
             speak("Say that again!")
             return "none"
     return query
-#listen()
 
         
 speak("Welcome to Aashirwad kirana store")
@@ -91,7 +91,7 @@ while True:
         
         total_bill =  total_bill + int(query1)*250
         
-    elif 'turmeric powder'in query or 'turmeric' in query:
+    elif 'turmeric powder' in query or 'turmeric' in query:
         speak("turmeric powder has been added ")
         customer_list.append(query)
         speak("How much kilogram :")
