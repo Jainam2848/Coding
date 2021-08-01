@@ -12,7 +12,7 @@ import time
 engine = p.init("sapi5")
 voices = engine.getProperty("voices")
 engine.setProperty("voices", voices[0].id)
-print(voices[0].id)
+
 def speak(audio):
     engine.say(audio)
     engine.runAndWait()
