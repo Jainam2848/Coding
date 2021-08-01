@@ -52,3 +52,4 @@ plt.hot()
 
 plt.title(" Density plot of the intensity of the circular diffraction pattern of a point light source")
 plt.show()
+plt.show()
